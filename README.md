@@ -49,7 +49,9 @@ Setup vhosts conf
 </VirtualHost>
 ```
 
-Enable vhosts
+## Enable vhosts
+
+Open httpd.conf
 
 ```
 $ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
