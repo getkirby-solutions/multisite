@@ -54,10 +54,20 @@ Enable vhosts
 ```
 $ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
 ```
+or
+```
+$ open -a Atom /etc/apache2/httpd.conf
+```
 
 Add (or uncomment)
 
 ```
 # Virtual hosts
 Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
+```
+
+Restart apache
+
+```
+$ sudo apachectl restart
 ```
