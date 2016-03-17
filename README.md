@@ -23,13 +23,13 @@ Setup hostnames
 
 ## Setup vistual hosts
 
-Open vistual hosts
+Open vhosts conf
 
 ```shell
 $ open -a Atom /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
 
-Virtual hosts setup
+Setup vhosts conf
 
 ```
 <VirtualHost *:80>
@@ -43,4 +43,17 @@ Virtual hosts setup
   ServerName oranges.com
   ServerAlias www.oranges.com
 </VirtualHost>
+```
+
+Enable vhosts
+
+```
+$ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
+```
+
+Add (or uncomment)
+
+```
+# Virtual hosts
+Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
