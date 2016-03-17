@@ -9,6 +9,10 @@ Open hostname
 ```shell
 $ open -a Atom /etc/hosts
 ```
+or
+```
+$ open -a Atom /private/etc/hosts
+```
 
 Setup hostnames
 
