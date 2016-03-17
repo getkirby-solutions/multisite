@@ -28,6 +28,10 @@ Open vhosts conf
 ```shell
 $ open -a Atom /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
+or
+```
+$ open -a Atom /private/etc/apache2/extra/httpd-vhosts.conf
+```
 
 Setup vhosts conf
 
