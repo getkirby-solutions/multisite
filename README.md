@@ -72,6 +72,12 @@ Add (or uncomment)
 Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
 
+or
+
+```
+Include /private/etc/apache2/extra/httpd-vhosts.conf
+```
+
 Restart apache
 
 ```
