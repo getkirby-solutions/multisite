@@ -8,33 +8,33 @@ Prerequsites:
 
 ## Install Apache
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install apache2
 ```
 
 ## Create the directory structure
 
-```
+```bash
 $ sudo mkdir -p /var/www/example.com/public_html
 $ sudo mkdir -p /var/www/test.com/public_html
 ```
 
 ## Permissions
 
-```
-## ownership
+```bash
+# ownership
 $ sudo chown -R $USER:$USER /var/www/example.com/public_html
 $ sudo chown -R $USER:$USER /var/www/test.com/public_html
 
-## permission
+# permission
 $ sudo chmod -R 755 /var/www
 ```
 The variable `$USER` takes the value of current user
 
 ## Populate content
 
-```
+```bash
 $ vim /var/www/example.com/public_html/index.html
 ```
 
@@ -49,7 +49,7 @@ $ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-avail
 
 Open it
 
-```
+```bash
 $ sudo vim /etc/apache2/sites-available/apples.com.conf
 ```
 
@@ -70,7 +70,7 @@ Add
 
 ## Enable virtual host
 
-```
+```bash
 $ sudo a2ensite example.com.conf
 $ sudo a2ensite test.com.conf
 $ sudo service apache2 restart
