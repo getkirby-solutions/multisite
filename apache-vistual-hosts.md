@@ -13,7 +13,7 @@ $ sudo apt-get update
 $ sudo apt-get install apache2
 ```
 
-## Create the Directory Structure
+## Create the directory structure
 
 ```
 $ sudo mkdir -p /var/www/example.com/public_html
@@ -32,13 +32,13 @@ $ sudo chmod -R 755 /var/www
 ```
 The variable `$USER` takes the value of current user
 
-## Upload/create content
+## Populate content
 
 ```
 $ vim /var/www/example.com/public_html/index.html
 ```
 
-## Create New Virtual Host Files
+## Create new virtual host
 
 - Virtual host files are the files that specify the actual configuration
 - Apache comes with a default virtual host file called 000-default.conf
@@ -66,4 +66,12 @@ Add
 </VirtualHost>
 ```
 
-Save and close
+**Repeat for other domains**
+
+## Enable virtual host
+
+```
+$ sudo a2ensite example.com.conf
+$ sudo a2ensite test.com.conf
+$ sudo service apache2 restart
+```
