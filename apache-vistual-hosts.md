@@ -16,16 +16,16 @@ $ sudo apt-get install apache2
 ## Create the directory structure
 
 ```bash
-$ sudo mkdir -p /var/www/example.com/public_html
-$ sudo mkdir -p /var/www/test.com/public_html
+$ sudo mkdir -p /var/www/apples.com/public_html
+$ sudo mkdir -p /var/www/oranges.com/public_html
 ```
 
 ## Permissions
 
 ```bash
 # ownership
-$ sudo chown -R $USER:$USER /var/www/example.com/public_html
-$ sudo chown -R $USER:$USER /var/www/test.com/public_html
+$ sudo chown -R $USER:$USER /var/www/apples.com/public_html
+$ sudo chown -R $USER:$USER /var/www/oranges.com/public_html
 
 # permission
 $ sudo chmod -R 755 /var/www
@@ -35,7 +35,8 @@ The variable `$USER` takes the value of current user
 ## Populate content
 
 ```bash
-$ vim /var/www/example.com/public_html/index.html
+$ vim /var/www/apples.com/public_html/index.html
+$ vim /var/www/oranges.com/public_html/index.html
 ```
 
 ## Create new virtual host
@@ -57,10 +58,9 @@ Add
 
 ```bash
 <VirtualHost *:80>
-  ServerAdmin admin@example.com
-  ServerName example.com
-  ServerAlias www.example.com
-  DocumentRoot /var/www/example.com/public_html
+  ServerName apples.com
+  ServerAlias www.apples.com
+  DocumentRoot /var/www/apples.com/public_html
   ErrorLog ${APACHE_LOG_DIR}/error.log
   CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
@@ -71,7 +71,8 @@ Add
 ## Enable virtual host
 
 ```bash
-$ sudo a2ensite example.com.conf
-$ sudo a2ensite test.com.conf
+$ sudo a2ensite apples.com.conf
+$ sudo a2ensite oranges.com.conf
+# restart server
 $ sudo service apache2 restart
 ```
