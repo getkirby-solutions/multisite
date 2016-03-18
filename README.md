@@ -25,7 +25,7 @@ Setup hostnames
 
 ***
 
-## Setup virtual hosts
+## Setup vhosts
 
 Open vhosts conf
 
