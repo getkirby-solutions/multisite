@@ -2,15 +2,11 @@
 
 ## Setup host names
 
-Map domains to specific IP's. The IP may be localhost IP, or remote server IP.
+Host names map domains to specific IP's. The referneced IP may be localhost, or remote server.
 
 Open host name configuration file
 
-```shell
-$ open -a Atom /etc/hosts
-```
-or
-```
+```bash
 $ open -a Atom /private/etc/hosts
 ```
 
