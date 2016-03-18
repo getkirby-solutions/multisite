@@ -1,10 +1,10 @@
-# kirby-multisite
+# Setup virtual hosts in MAMP
 
-Multisite tutorial
+## Setup host names
 
-## Setup hostnames
+Map domains to specific IP's. The IP may be localhost IP, or remote server IP.
 
-Open hostname
+Open host name configuration file
 
 ```shell
 $ open -a Atom /etc/hosts
@@ -14,10 +14,10 @@ or
 $ open -a Atom /private/etc/hosts
 ```
 
-Setup hostnames
+Setup
 
 ```
-# serve 127.0.0.1, when XYZ.com:8888 is called
+# serve 127.0.0.1, when XYZ.com is requested
 
 127.0.0.1 ABC.com
 127.0.0.1 XYZ.com
@@ -25,9 +25,9 @@ Setup hostnames
 
 ***
 
-## Setup vhosts
+## Setup virtual hosts
 
-Open vhosts conf
+Open vhosts configuration file
 
 ```shell
 $ open -a Atom /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
@@ -37,7 +37,7 @@ or
 $ open -a Atom /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
-Setup vhosts conf
+Setup
 
 ```
 <VirtualHost *:80>
@@ -53,9 +53,9 @@ Setup vhosts conf
 </VirtualHost>
 ```
 
-## Enable vhosts
+## Enable virtual host
 
-Open httpd.conf
+Open httpd.conf file
 
 ```
 $ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
