@@ -1,5 +1,7 @@
 ## Setup Apache virtual hosts (Digital Ocean)
 
+Reference: https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+
 Prerequsites:
 
 - [Create a non-root user](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
