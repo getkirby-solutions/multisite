@@ -1,4 +1,4 @@
-# Setup Mac OSX virtual hosts
+# Setup Mac OSX virtual hosts (with Apache 2.4)
 
 ## Setup host names
 
