@@ -25,7 +25,7 @@ Setup
 
 Open vhosts configuration file
 
-```bash
+```shell
 $ sudo vim /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
@@ -51,7 +51,7 @@ Setup
 
 Open httpd.conf file
 
-```bash
+```shell
 $ sudo vim /etc/apache2/httpd.conf
 ```
 
@@ -77,7 +77,7 @@ Include /private/etc/apache2/extra/httpd-vhosts.conf
 
 Restart server
 
-```bash
+```shell
 $ sudo apachectl restart
 ```
 
