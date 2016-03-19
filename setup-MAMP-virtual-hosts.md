@@ -1,4 +1,4 @@
-# Setup virtual hosts in MAMP
+# Setup MAMP virtual hosts
 
 ## Setup host names
 
