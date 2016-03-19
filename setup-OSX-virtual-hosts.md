@@ -6,13 +6,13 @@ Host names map domains to specific IP's. Those IP may be localhost, or remote se
 
 Open host name configuration file
 
-```
+```bash
 $ vim /private/etc/hosts
 ```
 
 Setup
 
-```
+```ApacheConf
 # serve 127.0.0.1, when XYZ.com is requested
 
 127.0.0.1 ABC.com
@@ -25,7 +25,7 @@ Setup
 
 Open vhosts configuration file
 
-```
+```bash
 $ sudo vim /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
@@ -51,7 +51,7 @@ Setup
 
 Open httpd.conf file
 
-```
+```bash
 $ sudo vim /etc/apache2/httpd.conf
 ```
 
@@ -77,7 +77,7 @@ Include /private/etc/apache2/extra/httpd-vhosts.conf
 
 Restart server
 
-```
+```bash
 $ sudo apachectl restart
 ```
 
