@@ -31,8 +31,7 @@ $ sudo vim /private/etc/apache2/extra/httpd-vhosts.conf
 
 Setup
 
-```
-
+```ApacheConf
 # default path is: /Library/WebServer/Documents
 
 <VirtualHost *:80>
@@ -58,7 +57,7 @@ $ sudo vim /etc/apache2/httpd.conf
 
 Add (or uncomment)
 
-```
+```ApacheConf
 # enable
 LoadModule rewrite_module libexec/apache2/mod_rewrite.so
 LoadModule php5_module libexec/apache2/libphp5.so
