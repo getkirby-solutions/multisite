@@ -1,4 +1,4 @@
-# Setup virtual hosts in Mac OSX
+# Setup Mac OSX virtual hosts
 
 ## Setup host names
 
