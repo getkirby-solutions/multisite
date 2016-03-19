@@ -22,7 +22,7 @@ $ sudo mkdir -p /var/www/apples.com/public_html
 $ sudo mkdir -p /var/www/oranges.com/public_html
 ```
 
-## Permissions
+## Set permissions
 
 ```bash
 # ownership
@@ -41,7 +41,7 @@ $ vim /var/www/apples.com/public_html/index.html
 $ vim /var/www/oranges.com/public_html/index.html
 ```
 
-## Create new virtual host
+## Create virtual host
 
 - Virtual host files are the files that specify the actual configuration
 - Apache comes with a default virtual host file called 000-default.conf
@@ -73,8 +73,10 @@ Add
 ## Enable virtual host
 
 ```bash
+# enable virtual hosts
 $ sudo a2ensite apples.com.conf
 $ sudo a2ensite oranges.com.conf
+
 # restart server
 $ sudo service apache2 restart
 ```
