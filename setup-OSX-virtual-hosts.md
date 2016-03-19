@@ -32,6 +32,7 @@ $ sudo vim /private/etc/apache2/extra/httpd-vhosts.conf
 Setup
 
 ```
+
 # default path is: /Library/WebServer/Documents
 
 <VirtualHost *:80>
@@ -58,7 +59,18 @@ $ sudo vim /etc/apache2/httpd.conf
 Add (or uncomment)
 
 ```
-# Virtual hosts
+# enable PHP
+LoadModule php5_module libexec/apache2/libphp5.so
+
+# setup
+<Directory />
+  Options Indexes FollowSymLinks Multiviews
+  MultiviewsMatch Any
+  AllowOverride all
+  Require all granted
+</Directory>
+
+# include setup file
 Include /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
