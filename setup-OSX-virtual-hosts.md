@@ -52,7 +52,7 @@ Setup
 Open httpd.conf file
 
 ```
-$ vim /etc/apache2/httpd.conf
+$ sudo vim /etc/apache2/httpd.conf
 ```
 
 Add (or uncomment)
