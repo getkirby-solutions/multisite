@@ -28,22 +28,18 @@ Open vhosts configuration file
 ```shell
 $ open -a Atom /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
-or
-```
-$ open -a Atom /private/etc/apache2/extra/httpd-vhosts.conf
-```
 
 Setup
 
 ```
 <VirtualHost *:80>
-  DocumentRoot "/Applications/Mamp/htdocs/multisite" ## content to be served
+  DocumentRoot "/Applications/Mamp/htdocs/" ## content to be served
   ServerName apples.com
   ServerAlias www.apples.com
 </VirtualHost>
 
 <VirtualHost *:80>
-  DocumentRoot "/Applications/Mamp/htdocs/multisite" ## content to be served
+  DocumentRoot "/Applications/Mamp/htdocs/" ## content to be served
   ServerName oranges.com
   ServerAlias www.oranges.com
 </VirtualHost>
@@ -56,10 +52,6 @@ Open httpd.conf file
 ```
 $ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
 ```
-or
-```
-$ open -a Atom /etc/apache2/httpd.conf
-```
 
 Add (or uncomment)
 
@@ -68,13 +60,7 @@ Add (or uncomment)
 Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
 
-or
-
-```
-Include /private/etc/apache2/extra/httpd-vhosts.conf
-```
-
-Restart apache
+Restart server
 
 ```
 $ sudo apachectl restart
