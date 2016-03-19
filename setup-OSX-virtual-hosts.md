@@ -26,7 +26,7 @@ Setup
 Open vhosts configuration file
 
 ```
-$ vim /private/etc/apache2/extra/httpd-vhosts.conf
+$ sudo vim /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
 Setup
