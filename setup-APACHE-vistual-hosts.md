@@ -1,6 +1,6 @@
-## Setup Apache virtual hosts (Digital Ocean)
+## Setup Apache virtual hosts on Digital Ocean
 
-Reference: https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+Reference: [Setup Apache vhosts on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts)
 
 Prerequsites:
 
