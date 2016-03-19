@@ -6,7 +6,7 @@ Host names map domains to specific IP's. Those IP may be localhost, or remote se
 
 Open host name configuration file
 
-```bash
+```shell
 $ vim /private/etc/hosts
 ```
 
