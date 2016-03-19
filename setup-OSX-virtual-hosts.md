@@ -2,7 +2,7 @@
 
 ## Setup host names
 
-Host names map domains to specific IP's. Those IP may be localhost, or remote server.
+Host names map domains to specific IP's. Those IP may point to localhost, or remote server.
 
 Open host name configuration file
 
