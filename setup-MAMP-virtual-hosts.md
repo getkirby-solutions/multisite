@@ -7,7 +7,7 @@ Host names map domains to specific IP's. Those IP may be localhost, or remote se
 Open host name configuration file
 
 ```bash
-$ open -a Atom /private/etc/hosts
+$ vim /private/etc/hosts
 ```
 
 Setup
@@ -26,7 +26,7 @@ Setup
 Open vhosts configuration file
 
 ```shell
-$ open -a Atom /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
+$ vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
 
 Setup
@@ -50,7 +50,7 @@ Setup
 Open httpd.conf file
 
 ```
-$ open -a Atom /Applications/MAMP/conf/apache/httpd.conf
+$ vim /Applications/MAMP/conf/apache/httpd.conf
 ```
 
 Add (or uncomment)
