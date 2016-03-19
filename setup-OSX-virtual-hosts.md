@@ -59,18 +59,20 @@ $ sudo vim /etc/apache2/httpd.conf
 Add (or uncomment)
 
 ```
-# enable PHP
+# enable
+LoadModule rewrite_module libexec/apache2/mod_rewrite.so
 LoadModule php5_module libexec/apache2/libphp5.so
 
 # setup
 <Directory />
   Options Indexes FollowSymLinks Multiviews
   MultiviewsMatch Any
+  Allow from all
   AllowOverride all
   Require all granted
 </Directory>
 
-# include setup file
+# include settings file
 Include /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
