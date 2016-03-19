@@ -62,6 +62,4 @@ Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 Restart server
 
-```
-$ sudo apachectl restart
-```
+**The end**
