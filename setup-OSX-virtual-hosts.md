@@ -38,12 +38,16 @@ Setup
   DocumentRoot "/path/to/files/" ## content to be served
   ServerName apples.com
   ServerAlias www.apples.com
+  ErrorLog "/private/var/log/apache2/mysite-error_log"
+  CustomLog "/private/var/log/apache2/mysite-access_log" common
 </VirtualHost>
 
 <VirtualHost *:80>
   DocumentRoot "/path/to/files/" ## content to be served
   ServerName oranges.com
   ServerAlias www.oranges.com
+  ErrorLog "/private/var/log/apache2/mysite-error_log"
+  CustomLog "/private/var/log/apache2/mysite-access_log" common
 </VirtualHost>
 ```
 
