@@ -32,6 +32,8 @@ $ vim /private/etc/apache2/extra/httpd-vhosts.conf
 Setup
 
 ```
+# default path is: /Library/WebServer/Documents
+
 <VirtualHost *:80>
   DocumentRoot "/path/to/files/" ## content to be served
   ServerName apples.com
