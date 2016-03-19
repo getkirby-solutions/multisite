@@ -60,6 +60,6 @@ Add (or uncomment)
 Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 ```
 
-Restart server
+Then restart MAMP server
 
 **The end**
