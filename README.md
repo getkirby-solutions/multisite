@@ -5,4 +5,4 @@
   - Create `/public_html/site.php` file
   - Create folder structure `/public_html/$domain/...`, must match `site.php` paths
 - Setup IP host names
-- Setup Apache virtual hosts
+- Setup Apache virtual hosts (if needed)
