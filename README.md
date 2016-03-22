@@ -1,5 +1,7 @@
 # Kirby Multisite
 
+## Instructions
+
 - Populate content
   - Install kirby on root `/public_html/` (localhost and/or remote server)
   - Create `./site.php` file on root
@@ -10,3 +12,6 @@
 - Setup Apache virtual hosts (if needed)
   - Virtual hosts separate domains in multiple independent clusters
   - If no virtual host is found, domains will resolve to system localhost
+
+## gitignore file
+
