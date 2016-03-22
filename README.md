@@ -13,5 +13,15 @@
   - Virtual hosts separate domains in multiple independent clusters
   - If no virtual host is found, domains will resolve to system localhost
 
+**You might need o enable `mod rewrite`:**
+
+```shell
+# enable module
+$ sudo a2enmod rewrite
+
+# restart server
+$ service apache2 restart
+```
+
 ## gitignore file
 
