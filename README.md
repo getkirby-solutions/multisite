@@ -13,7 +13,7 @@
   - Virtual hosts separate domains in multiple independent clusters
   - If no virtual host is found, domains will resolve to system localhost
 
-**You might need o enable `mod rewrite`:**
+**You might need to enable `mod rewrite` in the VPS:**
 
 ```shell
 # enable module
